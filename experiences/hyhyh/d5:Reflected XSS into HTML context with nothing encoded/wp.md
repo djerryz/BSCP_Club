@@ -56,4 +56,4 @@ https://insecure-website.com/status?message=<script>/*+Bad+stuff+here...+*/</scr
 
 4. 确定可用的payload。用burpsuite repeator模块。
 
-5. 在浏览器中实施攻击。ß
+5. 在浏览器中实施攻击。

@@ -74,10 +74,6 @@ TrackingId=bmrduZ4GewMJPzUP' AND (SELECT SUBSTRING(password,1,1) FROM users WHER
 ![](pic/2set-res.png)
 
 # 知识点
-What is blind SQL injection?
-Blind SQL injection arises when an application is vulnerable to SQL injection, but its HTTP responses do not contain the results of the relevant SQL query or the details of any database errors.
-
-With blind SQL injection vulnerabilities, many techniques such as UNION attacks, are not effective because they rely on being able to see the results of the injected query within the application's responses. It is still possible to exploit blind SQL injection to access unauthorized data, but different techniques must be used.
 ## 盲注
 盲注就是应用程序存在SQL注入漏洞，但是其http响应中不包含相关SQL语句的结果和数据库报错的细节。因此例如联合注入等技术对于盲注就不是很有效，因为这些技术依赖于应用程序对注入语句的响应结果。
 

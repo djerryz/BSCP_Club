@@ -1,5 +1,7 @@
 # 题意
+![](pic/7-3.png)
 
+注入payload并唤起alert()函数。
 # 解题思路
 step1:用burpsuite获取信息
 开启burpsuite的intercept模块后，在网页中搜索随机字符串，并用intercept拦截返回包。

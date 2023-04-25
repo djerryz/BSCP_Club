@@ -1,6 +1,6 @@
 # 题意
 ![](pic/6-2.png)
-该dom漏洞source为location.search，sink为document.write
+该dom漏洞source为location.search，返回URL的查询部分。sink为document.write(),对dom进行修改
 利用该漏洞唤起aler()即可。
 # 解题思路
 step1：输入任意字符串搜索并查看源码
@@ -113,3 +113,7 @@ document.open(…)
 window.open(…)
 
 window.location.href=… (and assigning to location’s href, host and hostname)
+
+
+## 如何寻找sinks
+sinks分为HTML sinks和JS执行sinks。HTML sinks输入测试字符串之后打开浏览器的开发者模式在源码中搜索测试字符串即可。JS执行sinks由于输入的测试字符串不会在DOM中出现，就需要打开JSdebugger。

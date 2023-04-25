@@ -1,7 +1,7 @@
 # 题意
 ![](pic/7-1.png)
 
-该实验中的submit feedback页面存在DOM型XSS。它用到了JQuery中的选择函数来寻找一个anchor元素并且改变其href属性。改变属性的参数从location.search获取。
+该实验中的submit feedback页面存在DOM型XSS。sink为attr()函数，source为location.search
 
 把back链接改成可以alert document.cookie即可
 # 解题思路
