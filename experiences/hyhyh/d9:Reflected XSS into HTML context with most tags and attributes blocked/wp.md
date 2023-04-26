@@ -48,8 +48,6 @@ step6:
 # 知识点
 
 ## XSS上下文
-Based on these details, you can then select one or more candidate XSS payloads, and test whether they are effective.
-
 测试反射型和存储型XSS的时候，关键在于确认XSS的上下文，包括：
 
 响应中攻击者可控的数据出现的位置。
@@ -58,3 +56,11 @@ Based on these details, you can then select one or more candidate XSS payloads, 
 
 基于这些细节，可以选择一种或者多种payloads，并测试它们是否可用。
 
+
+## html标签间的XSS
+当XSS上下文在html标签之间时，需要引入一些新的html来触发JS的执行。例如：
+
+```
+<script>alert(document.domain)</script>
+<img src=1 onerror=alert(1)>
+```

